@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michael 的台灣旅遊攻略</title>
+  <meta name="description" content="以大眾運輸、地方歷史與實地查證為核心的台灣一日遊、歷史走讀、美食地圖與鐵道交通攻略。">
+  <meta name="theme-color" content="#153b35">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首頁">
+      <span class="brand-mark">旅</span>
+      <span>Michael 的台灣旅遊攻略</span>
+    </a>
+    <nav aria-label="主要導覽">
+      <a href="#guides">旅遊攻略</a>
+      <a href="#method">查證原則</a>
+      <a href="#about">關於本站</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TAIWAN · SLOW TRAVEL · BY RAIL</p>
+        <h1>搭一段車，<br>讀一座城。</h1>
+        <p class="lead">從車站出發，以步行、公車與單車串起老街、古蹟、地方飲食和河岸風景。每一條路線，都把真實位置與交通查證放在美感之前。</p>
+        <a class="primary-button" href="#guides">開始找行程 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-poster" aria-label="精選攻略：山佳百年車站及周遭走讀">
+        <img src="shanjia.webp" alt="山佳百年車站及周遭走讀海報">
+        <div class="poster-note"><strong>本期精選</strong><span>山佳百年車站走讀</span></div>
+      </div>
+    </section>
+
+    <section class="guide-section" id="guides">
+      <div class="section-heading">
+        <div><p class="eyebrow">TRAVEL COLLECTION</p><h2>依旅行方式找攻略</h2></div>
+        <p id="resultCount" class="count">8 篇攻略</p>
+      </div>
+      <div class="filters" role="group" aria-label="攻略分類">
+        <button class="filter active" data-filter="all">全部</button>
+        <button class="filter" data-filter="daytrip">一日遊</button>
+        <button class="filter" data-filter="history">歷史走讀</button>
+        <button class="filter" data-filter="food">美食地圖</button>
+        <button class="filter" data-filter="rail">鐵道交通</button>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card featured" data-category="history rail">
+          <div class="card-image"><img src="shanjia.webp" alt="山佳百年車站走讀海報" loading="lazy"><span class="tag">歷史走讀</span></div>
+          <div class="card-body"><p class="location">新北 · 樹林</p><h3>山佳百年車站及周遭走讀</h3><p>從舊站、鐵道地景公園到懷舊農村彩繪巷，閱讀礦業小鎮的時間痕跡。</p><div class="meta"><span>🚆 臺鐵山佳站</span><span>約半日</span></div></div>
+        </article>
+
+        <article class="guide-card" data-category="daytrip history">
+          <div class="card-image"><img src="lukang.webp" alt="鹿港百年街區地方歷史走讀海報" loading="lazy"><span class="tag">地方走讀</span></div>
+          <div class="card-body"><p class="location">彰化 · 鹿港</p><h3>鹿港百年街區地方歷史走讀</h3><p>循著天后宮、老街與龍山寺，從香火、街屋和木構看見港市發展。</p><div class="meta"><span>🚌 大眾運輸</span><span>約4小時</span></div></div>
+        </article>
+
+        <article class="guide-card" data-category="daytrip rail">
+          <div class="card-image"><img src="tamsui.webp" alt="淡水不開車一日遊海報" loading="lazy"><span class="tag">不開車</span></div>
+          <div class="card-body"><p class="location">新北 · 淡水</p><h3>淡水不開車一日遊</h3><p>捷運抵達後沿河岸慢行，以四個景點安排第一次到淡水的經典路線。</p><div class="meta"><span>🚇 淡水信義線</span><span>4個景點</span></div></div>
+        </article>
+
+        <article class="guide-card" data-category="daytrip history rail">
+          <div class="card-image"><img src="dajia.webp" alt="大甲古蹟一日遊海報" loading="lazy"><span class="tag">媽祖文化</span></div>
+          <div class="card-body"><p class="location">臺中 · 大甲</p><h3>大甲古蹟一日遊</h3><p>從大甲車站向西步行，串聯鎮瀾宮、林氏貞孝坊與文昌祠。</p><div class="meta"><span>🚆 臺鐵海線</span><span>步行路線</span></div></div>
+        </article>
+
+        <article class="guide-card text-card" data-category="history">
+          <div class="text-visual visual-red"><span>竹</span><small>古城的四個時間切面</small></div>
+          <div class="card-body"><p class="location">新竹 · 舊城區</p><h3>新竹歷史走讀</h3><p>三座國定古蹟與一座市定古蹟，沿舊城街廓理解城市信仰與治理。</p><div class="meta"><span>🚶 步行</span><span>古蹟群</span></div></div>
+        </article>
+
+        <article class="guide-card text-card" data-category="history rail">
+          <div class="text-visual visual-blue"><span>三峽</span><small>街屋 · 祖師廟 · 地方藝術</small></div>
+          <div class="card-body"><p class="location">新北 · 三峽</p><h3>三峽歷史走讀</h3><p>從歷史文物館、老街南段、祖師廟到李梅樹紀念館。</p><div class="meta"><span>🚈 三鶯線轉乘</span><span>4個景點</span></div></div>
+        </article>
+
+        <article class="guide-card text-card" data-category="food rail">
+          <div class="text-visual visual-orange"><span>素</span><small>從車站步行找在地蔬食</small></div>
+          <div class="card-body"><p class="location">臺中 · 大甲</p><h3>大甲素食地圖</h3><p>整理車站周邊蔬食選擇；菜單、營業時間與公休日請以店家當日公告為準。</p><div class="meta"><span>🚆 EMU500主題</span><span>美食地圖</span></div></div>
+        </article>
+
+        <article class="guide-card text-card" data-category="daytrip rail">
+          <div class="text-visual visual-green"><span>橋</span><small>濕地 · 單車 · 大漢溪</small></div>
+          <div class="card-body"><p class="location">桃園 · 大溪</p><h3>中庄吊橋生態單車一日遊</h3><p>月眉人工濕地、山豬湖、中庄吊橋與調整池；橋長419公尺、寬2.5公尺。</p><div class="meta"><span>🚲 YouBike</span><span>三鶯線轉公車</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="method" id="method">
+      <div><p class="eyebrow light">ACCURACY FIRST</p><h2>不讓漂亮地圖取代真實路線</h2></div>
+      <ol>
+        <li><span>01</span><div><strong>官方資料優先</strong><p>座標、道路、交通、文資身分與開放資訊，優先核對政府及營運單位。</p></div></li>
+        <li><span>02</span><div><strong>至少交叉查證</strong><p>店名、地址與營業資訊不憑印象填寫；來源矛盾時明確保留。</p></div></li>
+        <li><span>03</span><div><strong>圖像只是導覽</strong><p>插畫不冒充測繪圖或實景；列車、建築與地方尺度均以真實資料校對。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">ABOUT THIS PROJECT</p>
+      <h2>一個鐵道迷的地方旅行筆記</h2>
+      <p>我喜歡從車站開始認識一座城市。這裡收錄以大眾運輸為主的行程，也記下老街、信仰、產業與日常飲食。網站持續更新；班次、票價、營業時間及現場管制，出發前請再次查看官方公告。</p>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Michael 的台灣旅遊攻略</span><span>以真實資料，規劃慢旅行</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
