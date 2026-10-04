@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && request.auth.uid == "2wFMKuMMwAfG4UciVLWRg1uDK6q1";
+    }
+
+    match /posts/{postId} {
+      allow read: if resource.data.published == true || isAdmin();
+      allow create, update, delete: if isAdmin()
+        && request.resource.data.authorUid == request.auth.uid;
+    }
+
+    match /comments/{commentId} {
+      allow create: if request.auth == null
+        && request.resource.data.keys().hasOnly(["postId", "name", "message", "status", "createdAt"])
+        && request.resource.data.postId is string
+        && request.resource.data.postId.size() > 0
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 1
+        && request.resource.data.name.size() <= 40
+        && request.resource.data.message is string
+        && request.resource.data.message.size() >= 1
+        && request.resource.data.message.size() <= 1000
+        && request.resource.data.status == "pending";
+      allow read, update, delete: if isAdmin();
+    }
+  }
+}
